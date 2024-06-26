@@ -5,7 +5,7 @@ const Contact = () => {
         <div>
           <h1 className="mb-0 font-bold text-center">
             Lets Create Amazing Travel
-            <br /> Experience Together
+            <br className="hidden md:block" /> Experience Together
           </h1>
         </div>
         <div className="mt-20 lg:m-10 xl:m-44">

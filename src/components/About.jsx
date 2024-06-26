@@ -7,7 +7,7 @@ const About = ({ Image, data }) => {
         <div className="w-full h-full" id="about">
           <h2>
             About Travel
-            <br /> Agency
+            <br className="hidden md:block" /> Agency
           </h2>
         </div>
         <div className="w-full h-full">
@@ -21,20 +21,20 @@ const About = ({ Image, data }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  mt-20">
         {data.map((item, i) => (
           <div
-            className="flex items-center   gap-5 w-full h-full bg-gradient-to-l from-[#3a3016] to-[#2b2a2a]  p-9 rounded-xl shadow-xl"
+            className="flex items-center justify-center  gap-5 w-full h-full bg-gradient-to-l from-[#3a3016] to-[#2b2a2a]  p-7 rounded-xl shadow-xl"
             key={i}
           >
-            <div>
-              <Image
-                className="w-20"
-                src={item.img}
-                alt="about icons"
-                width={1000}
-                height={1000}
-              />
-            </div>
-            <div className="w-full h-full">
-              <h2>{item.title}</h2>
+            <div
+              className="w-full h-full "
+              style={{
+                backgroundImage: `url(${item.img})`,
+                backgroundPosition: "center",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "contain",
+              }}
+            ></div>
+            <div className="w-full">
+              <h3>{item.title}</h3>
               <p>{item.desc}</p>
             </div>
           </div>

@@ -19,7 +19,7 @@ const Popular = ({ Image, data }) => {
         <div>
           <h2>Popular Destination</h2>
         </div>
-        <div className="flex gap-5 absolute top-[20%] right-0 z-[100000]">
+        <div className="flex gap-5 absolute top-[18%] md:top-[20%] right-0 z-[100000]">
           <div className=" button-prev-slide text-white   p-4 bg-gradient-to-r from-[#f3cd5c] to-[#ff4b04] rounded-full rotate-180 cursor-pointer">
             <FaArrowRight />
           </div>

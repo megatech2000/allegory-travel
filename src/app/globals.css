@@ -4,7 +4,7 @@
 
 @layer components {
   .section-width {
-    @apply w-[96%] lg:w-5/6  mx-auto  items-center;
+    @apply w-[90%] lg:w-5/6  mx-auto  items-center;
   }
   .section-padding {
     @apply py-14 md:py-20  lg:py-24;

@@ -44,7 +44,7 @@ const ChooseUs = ({ Image, data }) => {
           >
             {data.map((item, i) => (
               <SwiperSlide key={i} className="py-10">
-                <div className=" bg-gradient-to-r from-[#141414] to-[#1e0a03] p-5 text-center rounded-2xl">
+                <div className=" bg-gradient-to-r from-[#141414] to-[#1e0a03] p-5 py-20 md:py-0 text-center rounded-2xl">
                   <div className="flex items-center justify-center">
                     <Image
                       className="w-20 rounded-full"
