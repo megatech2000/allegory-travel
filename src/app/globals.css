@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .section-width {
+    @apply w-[96%] lg:w-5/6  mx-auto  items-center;
+  }
+  .section-padding {
+    @apply py-14 md:py-20  lg:py-24;
+  }
+  .padding-top {
+    @apply pt-14 md:pt-20  lg:pt-24;
+  }
+  .padding-bottom {
+    @apply pb-14 md:pb-20  lg:pb-24;
+  }
+  .margin-top {
+    @apply mt-14 md:mt-20  lg:mt-24;
+  }
+  .margin-bottom {
+    @apply mb-14 md:mb-20  lg:mb-24;
+  }
+  .btn-primary {
+    @apply py-2.5 px-10 bg-[#117DFA] text-white font-medium rounded-lg shadow-md hover:bg-[#117DFA] focus:outline-none focus:ring focus:ring-[#117DFA] focus:ring-opacity-75;
+  }
+  .btn-secondary {
+    @apply py-2.5 px-10 bg-primary-blue text-white font-medium rounded-lg shadow-md hover:bg-primary-violet;
+  }
+  .btn-black {
+    @apply bg-white text-black rounded-full py-1.5 px-6 flex items-center gap-4 mx-auto  text-sm md:text-base 2xl:text-lg;
+  }
+}
+
+@layer base {
+  h1 {
+    @apply xl:text-6xl lg:text-5xl md:text-4xl text-white text-3xl font-medium text-left md:leading-tight xl:leading-tight lg:leading-tight mb-5;
+  }
+  h2 {
+    @apply text-white  xl:text-5xl lg:text-4xl md:text-3xl text-2xl font-semibold leading-tight mb-4;
+  }
+  h3 {
+    @apply text-white   xl:text-4xl lg:text-3xl md:text-3xl text-xl font-semibold leading-tight mb-4;
+  }
+  h4 {
+    @apply text-white   xl:text-3xl lg:text-3xl md:text-3xl text-xl font-semibold leading-tight mb-4;
+  }
+  h5 {
+    @apply text-white   md:text-2xl     text-xl font-semibold leading-tight mb-3;
+  }
+  h6 {
+    @apply text-white   md:text-xl     text-lg font-semibold leading-tight mb-2;
+  }
+  p {
+    @apply xl:text-lg   md:text-base text-sm  text-[#7d7c7c];
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #000;
+}
+
+.hover-trans {
+  transition: all 400ms;
+}
+.bg-banner {
+  background-image: url("/images/banner-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-pop {
+  background-image: url("/images/pop-img-1.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overflow-item::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom pagination bullet styles */
+.swiper-pagination-bullet {
+  position: relative; /* Necessary for positioning the dot */
+  background: transparent; /* Make the bullet background transparent */
+  width: 12px; /* Adjust the width */
+  height: 12px; /* Adjust the height */
+  opacity: 1; /* Make bullets fully visible */
+  margin: 0 4px; /* Add spacing between bullets */
+}
+
+.swiper-pagination-bullet::before {
+  content: ""; /* Insert an empty content */
+  position: absolute; /* Position the dot absolutely within the bullet */
+  top: 90%; /* Center the dot vertically */
+  left: 50%; /* Center the dot horizontally */
+  transform: translate(-50%, -50%); /* Adjust the dot position */
+  width: 6px; /* Set the dot width */
+  height: 6px; /* Set the dot height */
+  background-color: #ffffff; /* Set the dot color */
+  border-radius: 50%; /* Make the dot circular */
+}
+
+.swiper-pagination-bullet-active::before {
+  background-color: #ff6347; /* Change the dot color for the active bullet */
+  transform: translate(-50%, -50%) scale(1.2); /* Enlarge the active dot */
+}
+.bg-texture {
+  background-image: url("/images/contact-grid.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
