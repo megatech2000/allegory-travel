@@ -18,14 +18,14 @@ const About = ({ Image, data }) => {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5  mt-20">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-20">
         {data.map((item, i) => (
           <div
-            className="flex items-center justify-center  gap-5 w-full h-full bg-gradient-to-l from-[#3a3016] to-[#2b2a2a]  p-7 rounded-xl shadow-xl"
+            className="flex items-center justify-center gap-5 w-full h-full bg-gradient-to-l from-[#3a3016] to-[#2b2a2a] p-7 rounded-xl shadow-xl"
             key={i}
           >
             <div
-              className="w-full h-full "
+              className="w-full h-full"
               style={{
                 backgroundImage: `url(${item.img})`,
                 backgroundPosition: "center",
@@ -41,7 +41,7 @@ const About = ({ Image, data }) => {
         ))}
       </div>
       <div className="pt-20 relative">
-        <div className="flex  items-center justify-center ">
+        <div className="flex items-center justify-center ">
           <Image
             className="w-full rounded-3xl"
             src="/images/about-video-img.webp"

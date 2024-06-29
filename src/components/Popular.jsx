@@ -14,16 +14,16 @@ import { Navigation } from "swiper/modules";
 
 const Popular = ({ Image, data }) => {
   return (
-    <section className="section-width section-padding">
-      <div className=" py-5 relative">
+    <section className="section-width section-padding mt-36 md:mt-0">
+      <div className="py-5 relative">
         <div>
           <h2>Popular Destination</h2>
         </div>
-        <div className="flex gap-5 absolute top-[18%] md:top-[20%] right-0 z-[100000]">
-          <div className=" button-prev-slide text-white   p-4 bg-gradient-to-r from-[#f3cd5c] to-[#ff4b04] rounded-full rotate-180 cursor-pointer">
+        <div className="flex gap-2 md:gap-5 absolute top-[17%] md:top-[20%] right-0 z-[100000]">
+          <div className="button-prev-slide text-white p-4 bg-gradient-to-r from-[#f3cd5c] to-[#ff4b04] rounded-full rotate-180 cursor-pointer">
             <FaArrowRight />
           </div>
-          <div className=" button-next-slide text-white p-4 bg-gradient-to-r from-[#f3cd5c] to-[#ff4b04] rounded-full cursor-pointer">
+          <div className="button-next-slide text-white p-4 bg-gradient-to-r from-[#f3cd5c] to-[#ff4b04] rounded-full cursor-pointer">
             <FaArrowRight />
           </div>
         </div>
@@ -53,7 +53,7 @@ const Popular = ({ Image, data }) => {
           {data.map((item, i) => (
             <SwiperSlide key={i}>
               <div
-                className=" h-[60vh] w-full rounded-xl relative"
+                className="h-[60vh] w-full rounded-xl relative"
                 style={{
                   backgroundImage: `url(${item.img})`,
                   backgroundSize: "cover",

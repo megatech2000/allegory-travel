@@ -14,24 +14,24 @@ const Anywhere = ({ Image, data }) => {
     <section className="section-width section-padding" id="services">
       <div>
         <div className="flex items-center justify-center">
-          <h1 className="font-bold text-center">
+          <h2 className="font-bold text-center">
             Go Anywhere
             <br /> With Our Latest Tour Offers
-          </h1>
+          </h2>
         </div>
       </div>
-      <div className="flex items-center justify-between gap-10 mt-10 overflow-x-scroll overflow-item">
+      <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 mt-10">
         {data.map((item, index) => (
           <div
             className={`${
               index === activeTab
                 ? "bg-gradient-to-r from-[#f3cd5c] to-[#ff4b04]"
                 : "bg-[#151515]"
-            }bg-[#151515] border border-[#2b2a2a] rounded-full flex gap-3 items-center px-6 py-3 hover:bg-gradient-to-r from-[#f3cd5c] to-[#ff4b04] cursor-pointer`}
+            }bg-[#151515] border border-[#2b2a2a] rounded-full flex gap-3 items-center justify-center md:justify-start w-full  py-2 md:px-6 md:py-3 hover:bg-gradient-to-r from-[#f3cd5c] to-[#ff4b04] cursor-pointer`}
             key={index}
             onClick={() => handleTabClick(index)}
           >
-            <div className="w-10 h-10 bg-[#2d2c2c] opacity-50  rounded-full"></div>
+            <div className="w-10 h-10 bg-[#2d2c2c] opacity-50  rounded-full hidden md:block"></div>
             <p className="text-2xl text-white">{item.label}</p>
           </div>
         ))}

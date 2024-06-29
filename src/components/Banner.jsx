@@ -5,15 +5,15 @@ const Banner = ({ Image }) => {
   return (
     <section>
       <div className="bg-banner h-screen relative">
-        <div className="bg-gradient-to-b lg:bg-gradient-to-r from-[#000] to-transparent w-full h-[40vh] lg:h-full absolute"></div>
+        <div className="bg-gradient-to-b lg:bg-gradient-to-r from-[#000] to-transparent w-full h-full absolute"></div>
         <div className="lg:flex h-full section-width ">
-          <div className="w-full lg:h-full  z-[1000] pt-44 lg:pt-0">
+          <div className="w-full lg:h-full  z-[1000] pt-28 lg:pt-0">
             <div className="flex flex-col  text-center lg:text-left items-center lg:items-start justify-center lg:h-full">
-              <h1 className="font-bold text-center lg:text-left z-[10000]">
+              <h1 className="font-bold text-left z-[10000]">
                 Tour Travel & <span className="text-[#ff4b04]"> Adventure</span>{" "}
                 Camping
               </h1>
-              <p className="w-full lg:w-[400px] z-[10000] text-white">
+              <p className="w-full lg:w-[400px] z-[10000] text-left text-white">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
