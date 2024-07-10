@@ -85,30 +85,31 @@ body {
 }
 
 /* Custom pagination bullet styles */
+
 .swiper-pagination-bullet {
-  position: relative; /* Necessary for positioning the dot */
-  background: transparent; /* Make the bullet background transparent */
-  width: 12px; /* Adjust the width */
-  height: 12px; /* Adjust the height */
-  opacity: 1; /* Make bullets fully visible */
-  margin: 0 4px; /* Add spacing between bullets */
+  position: relative;
+  background: transparent;
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  margin: 0 4px;
 }
 
 .swiper-pagination-bullet::before {
-  content: ""; /* Insert an empty content */
-  position: absolute; /* Position the dot absolutely within the bullet */
-  top: 90%; /* Center the dot vertically */
-  left: 50%; /* Center the dot horizontally */
-  transform: translate(-50%, -50%); /* Adjust the dot position */
-  width: 6px; /* Set the dot width */
-  height: 6px; /* Set the dot height */
-  background-color: #ffffff; /* Set the dot color */
-  border-radius: 50%; /* Make the dot circular */
+  content: "";
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 50%;
 }
 
 .swiper-pagination-bullet-active::before {
-  background-color: #ff6347; /* Change the dot color for the active bullet */
-  transform: translate(-50%, -50%) scale(1.2); /* Enlarge the active dot */
+  background-color: #ff6347;
+  transform: translate(-50%, -50%) scale(1.2);
 }
 .bg-texture {
   background-image: url("/images/contact-grid.png");

@@ -5,7 +5,7 @@ const Banner = ({ Image }) => {
   return (
     <section>
       <div className="bg-banner h-screen relative">
-        <div className="bg-gradient-to-b lg:bg-gradient-to-r from-[#000] to-transparent w-full h-full absolute"></div>
+        <div className="hidden md:block bg-gradient-to-b lg:bg-gradient-to-r from-[#000] to-transparent w-full h-full absolute"></div>
         <div className="lg:flex h-full section-width ">
           <div className="w-full lg:h-full  z-[1000] pt-28 lg:pt-0">
             <div className="flex flex-col  text-center lg:text-left items-center lg:items-start justify-center lg:h-full">
@@ -19,7 +19,7 @@ const Banner = ({ Image }) => {
               </p>
             </div>
           </div>
-          <div className="w-full   z-[1000]   md:flex  justify-end items-start mt-10 lg:mt-0">
+          <div className="w-full   z-[100000]   md:flex  justify-end items-start mt-10 lg:mt-0">
             <div className="bg-[#fff] p-5 w-full  xl:w-[85%] rounded-2xl z-[10000]">
               <div>
                 <h4 className="text-black">Find Your Next Adventure</h4>
@@ -38,7 +38,7 @@ const Banner = ({ Image }) => {
                 </div>
                 <div className="min-[464px]:flex gap-5 my-5">
                   <div className="w-full">
-                    <p className="text-black">Check in</p>
+                    <p className="text-black py-3 lg:py-0">Check in</p>
                     <div className="w-full p-3 border border-[#bdbbbb] rounded-md flex items-center  justify-center">
                       <input
                         type="date"
@@ -46,8 +46,8 @@ const Banner = ({ Image }) => {
                       />
                     </div>
                   </div>
-                  <div className="w-full">
-                    <p className="text-black">Check out</p>
+                  <div className="w-full my-5 lg:my-0">
+                    <p className="text-black py-3 lg:py-0">Check out</p>
                     <div className="w-full p-3 border border-[#bdbbbb] rounded-md flex items-center justify-center">
                       <input
                         type="date"
@@ -57,7 +57,7 @@ const Banner = ({ Image }) => {
                   </div>
                 </div>
                 <div>
-                  <p className="text-black ">Your Email</p>
+                  <p className="text-black py-3 lg:py-0">Your Email</p>
                   <div className="flex items-center p-3 rounded-md border border-[#bdbbbb]">
                     <div className="flex items-center gap-3">
                       <div className="text-2xl text-[#7d7c7c]">

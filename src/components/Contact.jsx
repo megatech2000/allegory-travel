@@ -15,7 +15,7 @@ const Contact = () => {
                 <div className="w-full">
                   <label
                     htmlFor=""
-                    className="text-white font-semibold text-xl "
+                    className="text-white font-semibold text-xl"
                   >
                     Name
                   </label>
@@ -29,7 +29,7 @@ const Contact = () => {
                 <div className="w-full mt-10 md:mt-0">
                   <label
                     htmlFor=""
-                    className="text-white font-semibold text-xl "
+                    className="text-white font-semibold text-xl"
                   >
                     Email
                   </label>
@@ -37,7 +37,7 @@ const Contact = () => {
                   <input
                     type="email"
                     className="w-full py-4 rounded-2xl px-5 text-xl bg-[#303030] outline-none text-white mt-3"
-                    placeholder="Enter yur email"
+                    placeholder="Enter your email"
                   />
                 </div>
               </div>
@@ -45,7 +45,7 @@ const Contact = () => {
                 <div className="w-full mt-10 md:mt-0">
                   <label
                     htmlFor=""
-                    className="text-white font-semibold text-xl "
+                    className="text-white font-semibold text-xl"
                   >
                     Mobile Number
                   </label>
@@ -53,13 +53,13 @@ const Contact = () => {
                   <input
                     type="text"
                     className="w-full py-4 rounded-2xl px-5 text-xl bg-[#303030] outline-none text-white mt-3"
-                    placeholder="Enter yur mobile number"
+                    placeholder="Enter your mobile number"
                   />
                 </div>
                 <div className="w-full mt-10 md:mt-0">
                   <label
                     htmlFor=""
-                    className="text-white font-semibold text-xl "
+                    className="text-white font-semibold text-xl"
                   >
                     Country
                   </label>
@@ -67,19 +67,19 @@ const Contact = () => {
                   <input
                     type="text"
                     className="w-full py-4 rounded-2xl px-5 text-xl bg-[#303030] outline-none text-white mt-3"
-                    placeholder="Enter yur country"
+                    placeholder="Enter your country"
                   />
                 </div>
               </div>
               <div className="mt-10 md:mt-0">
-                <label htmlFor="" className="text-white font-semibold text-xl ">
+                <label htmlFor="" className="text-white font-semibold text-xl">
                   Message
                 </label>
                 <textarea
                   name=""
                   id=""
                   className="w-full h-[20vh] py-2 rounded-2xl px-5 text-xl bg-[#303030] outline-none text-white mt-3"
-                  placeholder="Enter yur message"
+                  placeholder="Enter your message"
                 ></textarea>
               </div>
               <div className="mt-8">
