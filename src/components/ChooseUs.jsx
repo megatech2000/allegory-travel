@@ -8,6 +8,7 @@ import { FaArrowRight } from "react-icons/fa6";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import { motion } from "framer-motion";
 
 // import required modules
 
@@ -17,9 +18,15 @@ const ChooseUs = ({ Image, data }) => {
   return (
     <section className="section-width" id="choose">
       <div>
-        <div className="flex items-center justify-center">
+        <motion.div
+          className="flex items-center justify-center"
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h1 className="font-bold">Why Travelers Choose Us</h1>
-        </div>
+        </motion.div>
         <div>
           <Swiper
             slidesPerView={1}
@@ -44,7 +51,13 @@ const ChooseUs = ({ Image, data }) => {
           >
             {data.map((item, i) => (
               <SwiperSlide key={i} className="py-10">
-                <div className=" bg-gradient-to-r from-[#141414] to-[#1e0a03] p-5 py-20 md:py-0 text-center rounded-2xl">
+                <motion.div
+                  className=" bg-gradient-to-r from-[#141414] to-[#1e0a03] p-5 py-20 md:py-5 text-center rounded-2xl"
+                  initial={{ y: 100, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  transition={{ duration: 0.8 }}
+                  viewport={{ once: true }}
+                >
                   <div className="flex items-center justify-center">
                     <Image
                       className="w-20 rounded-full"
@@ -56,7 +69,7 @@ const ChooseUs = ({ Image, data }) => {
                   </div>
                   <h5 className="py-5 mb-0">{item.title}</h5>
                   <p>{item.desc}</p>
-                </div>
+                </motion.div>
               </SwiperSlide>
             ))}
           </Swiper>

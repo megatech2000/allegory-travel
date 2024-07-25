@@ -1,16 +1,33 @@
+"use client";
+
+import { motion } from "framer-motion";
+import React, { createContext } from "react";
+
 const Contact = () => {
   return (
     <section className="section-width section-padding">
       <div>
-        <div>
+        <motion.div
+          initial={{ y: 100, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
           <h1 className="mb-0 font-bold text-center">
             Lets Create Amazing Travel
             <br className="hidden md:block" /> Experience Together
           </h1>
-        </div>
+        </motion.div>
         <div className="mt-20 lg:m-10 xl:m-44">
           <div className="bg-texture bg-[#0e0d0d] border border-[#333] opacity-80 p-5 lg:p-14 rounded-3xl">
-            <form action="" id="contact-form">
+            <motion.form
+              action=""
+              id="contact-form"
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
               <div className="md:flex gap-10">
                 <div className="w-full">
                   <label
@@ -87,7 +104,7 @@ const Contact = () => {
                   Send Message
                 </button>
               </div>
-            </form>
+            </motion.form>
           </div>
         </div>
       </div>

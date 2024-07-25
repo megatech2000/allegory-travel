@@ -1,5 +1,9 @@
+"use client";
+
 import { CiLocationOn } from "react-icons/ci";
 import { CiMail } from "react-icons/ci";
+import { motion } from "framer-motion";
+import React, { createContext } from "react";
 
 const Banner = ({ Image }) => {
   return (
@@ -8,7 +12,12 @@ const Banner = ({ Image }) => {
         <div className="hidden md:block bg-gradient-to-b lg:bg-gradient-to-r from-[#000] to-transparent w-full h-full absolute"></div>
         <div className="lg:flex h-full section-width ">
           <div className="w-full lg:h-full  z-[1000] pt-28 lg:pt-0">
-            <div className="flex flex-col  text-center lg:text-left items-center lg:items-start justify-center lg:h-full">
+            <motion.div
+              className="flex flex-col  text-center lg:text-left items-center lg:items-start justify-center lg:h-full"
+              initial={{ opacity: 0, scale: 0 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6 }}
+            >
               <h1 className="font-bold text-left z-[10000]">
                 Tour Travel & <span className="text-[#ff4b04]"> Adventure</span>{" "}
                 Camping
@@ -17,9 +26,14 @@ const Banner = ({ Image }) => {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-            </div>
+            </motion.div>
           </div>
-          <div className="w-full   z-[100000]   md:flex  justify-end items-start mt-10 lg:mt-0">
+          <motion.div
+            className="w-full   z-[100000]   md:flex  justify-end items-start mt-10 lg:mt-0"
+            initial={{ opacity: 0, scale: 0 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+          >
             <div className="bg-[#fff] p-5 w-full  xl:w-[85%] rounded-2xl z-[10000]">
               <div>
                 <h4 className="text-black">Find Your Next Adventure</h4>
@@ -78,7 +92,7 @@ const Banner = ({ Image }) => {
                 </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
